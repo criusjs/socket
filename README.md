@@ -1,7 +1,17 @@
 # socket
 
-- [](https://www.w3cschool.cn/socket/socket-odxe2egl.html)
-- [](https://blog.csdn.net/function__/article/details/73089504)
+### Todo list
+- 监听客户端所有连接事件
+- 过滤所有消息
+- 过滤所有请求、域名
+- 客户端分组- 自动（随机auto、自定义defind）|手动manual
+- 客户端剔除、转入
+- 广播
+- 排除功能
+
+##
+- [ref](https://www.w3cschool.cn/socket/socket-odxe2egl.html)
+- [ref](https://blog.csdn.net/function__/article/details/73089504)
 
 - 一个客户端可以存在多个分组
 - 一个分组可以存在多个客户端

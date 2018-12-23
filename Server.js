@@ -1,4 +1,11 @@
 class SocketServer {
+  constructor(options) {
+    options = Object.assign({
+      group: (socket) => { // 'auto', 'manual', fn, 
+
+      }
+    }, options)
+  }
 
   on(event_name) {
 
