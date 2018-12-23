@@ -1,0 +1,22 @@
+{
+  "name": "socket",
+  "version": "1.0.0",
+  "description": "- [](https://www.w3cschool.cn/socket/socket-odxe2egl.html)",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/criusjs/socket.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/criusjs/socket/issues"
+  },
+  "homepage": "https://github.com/criusjs/socket#readme",
+  "dependencies": {
+    "socket.io": "^2.2.0"
+  }
+}
