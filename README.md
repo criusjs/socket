@@ -7,6 +7,41 @@
 - 一个分组可以存在多个客户端
 - 客户端:分组 = *:*
 
+### io configure
+```
+serveClient: false,
+  // below are engine.IO options
+pingInterval: 10000,
+pingTimeout: 5000,
+cookie: false
+//
+path: '/io'
+//
+allowRequest: (req, cb) => {}
+origins
+
+```
+```
+io.origins('http://localhost:*')
+
+io.origins((origin, cb) => {
+  if (origin === 'http://localhost:3000/') return cb(null, true)
+  cb(null, false)
+})
+
+io(namespace)
+```
+
+### use
+```
+利用中间件数据校验
+
+io.use((socket, next) => {
+  if (socket.request.headers.cookie) return next()
+  next(new Error('Authentication error'))
+})
+```
+
 ### on
 - io.on 监听All客户端连接
 - socket.on
@@ -24,8 +59,11 @@
 socket.join(data.room);
 socket.leave(data.room); 踢出分组
 
-### in or to
-
+### in(room) or to(room) or of(namespace)
+- io
+- socket
+- io.sockets
+- ...
 
 ### get rooms
 io.sockets.manager.rooms // all
